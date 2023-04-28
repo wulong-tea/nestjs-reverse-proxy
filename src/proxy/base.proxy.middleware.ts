@@ -8,6 +8,9 @@ import * as zlib from 'zlib';
 import { RequestHandler } from 'express';
 import { JsonUtils } from '../utils/json';
 
+/**
+ * @author wulong-tea (WangQi)
+ */
 export interface ReverseProxyOptions {
   target: string;
   headerKey?: string;

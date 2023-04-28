@@ -87,3 +87,7 @@ export class AppModule {
   ```bash
   curl -H x-reverse-proxy:file-download http://localhost:3000/proxy/upload/img/2023-02-15/931a96c3.jpeg > file.jpeg
   ```
+
+## License
+
+[MIT licensed](LICENSE)
