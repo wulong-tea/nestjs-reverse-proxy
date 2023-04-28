@@ -1,7 +1,7 @@
 ## Description
 
 A [nestjs](https://docs.nestjs.com/) reverse proxy implementation + winston logger.
-一个基于 [nestjs](https://docs.nestjs.com/) 的反向代 + winston logger 输出日志。
+一个基于 [nestjs](https://docs.nestjs.com/) 的反向代理实现 + winston 日志输出。
 
 ## Installation
 
@@ -75,14 +75,15 @@ export class AppModule {
 }
 ```
 
-- Test 测试
-  - BaiduBaikeProxyMiddleware:
+Test 测试
+
+- BaiduBaikeProxyMiddleware:
 
   ```bash
   curl -H x-reverse-proxy:BaiduBaike 'http://localhost:3000/proxy/api/openapi/BaikeLemmaCardApi?scope=103&format=json&appid=379020&bk_key=test&bk_length=600'
   ```
 
-  - FileDownloadProxyMiddleware:
+- FileDownloadProxyMiddleware:
 
   ```bash
   curl -H x-reverse-proxy:file-download http://localhost:3000/proxy/upload/img/2023-02-15/931a96c3.jpeg > file.jpeg
