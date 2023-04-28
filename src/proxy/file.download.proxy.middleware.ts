@@ -3,7 +3,6 @@ import { BaseReverseProxyMiddleware } from './base.proxy.middleware';
 
 @Injectable()
 export class FileDownloadProxyMiddleware extends BaseReverseProxyMiddleware {
-  // 测试链接：localhost:3333/proxy/upload/img/2023-02-15/931a96c3.jpeg
   constructor() {
     super({
       target: 'http://www.nlc.cn',
