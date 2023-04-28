@@ -8,6 +8,7 @@ A [nestjs](https://docs.nestjs.com/) reverse proxy implementation + winston logg
 ```bash
 npm install -g pnpm
 pnpm install
+pnpm add http-proxy-middleware nest-winston express-rate-limit zlib winston stream
 ```
 
 ## Running the app
